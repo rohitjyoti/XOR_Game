@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Merienda', cursive;
+}
+
 h1 {
     font-size: 2.5em;
 }
@@ -18,13 +22,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav ul {
-    list-style: none;
     font-family: 'Merienda', cursive;
     font-weight: bold;
-    font-size: 1.5em;
 }
 
 .gameContainer {
@@ -125,5 +124,21 @@ nav ul {
     .container{
         grid-template-columns: repeat(3,20vh);
         grid-template-rows: repeat(3,20vw);
+    }
+}
+
+@media screen and (min-width: 460px) {
+    body {
+        overflow: hidden;
+    }
+    nav {
+        width: 100%;
+    }
+    .heading {
+        font-size: 1em;
+    }
+    .container{
+        margin: 2em;
+        width: 90%;
     }
 }
